@@ -1,0 +1,185 @@
+body {
+    background-color: black !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.7em;
+}
+
+.qoute-title {
+    z-index: 2;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: large;
+    color: darkgrey;
+    letter-spacing: 0.3rem; /* Adjusted for clarity */
+    width: max-content;
+    text-transform: uppercase;
+}
+
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: 0px 0;
+    }
+
+    100% {
+        background-position: 100% 0; /* Use % for responsiveness */
+    }
+}
+
+.c-animated-background {
+    span {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: fangsong !important;
+        color: blueviolet;
+        font-size: 80px;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    span:before,
+    span:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        top: 50%;
+        display: block;
+    }
+
+    span:before {
+        z-index: -1;
+    }
+
+    animation: placeHolderShimmer 7s linear infinite;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    height: 100%;
+    width: 100%; /* Fixed to 100% for full width */
+    position: absolute;
+    padding-top: 50px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@keyframes tipsy {
+    0% {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+}
+
+.carousel-inner {
+    max-width: 100%;
+    height: 40rem;
+}
+
+@media (max-width: 660px) {
+    .carousel-inner {
+        height: 30rem !important;
+    }
+}
+
+.rightnav .btn {
+    padding: 0 0.25rem !important;
+}
+
+.qoute-container {
+    background-color: currentcolor;
+}
+@media only screen and (max-width: 960px) {
+  
+
+    .product-container {
+        justify-content: center !important;
+
+
+    }
+}
+
+.product-container {
+    gap: 1rem; /* Updated to 1rem for consistent gap */
+    margin-bottom: 5rem;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Added for wrapping */
+    justify-content: center; /* Center items horizontally */
+    max-width: 100%;
+    padding: 0px;
+    gap: 5px;
+}
+
+.card {
+    border: 1px solid;
+    width: 20rem;
+    border-radius: 0;
+    text-align: center;
+    transition: transform 0.10s;
+    transform-style: preserve-3d;
+}
+
+.card img {
+    max-height: 25rem;
+    max-width: 15.148rem;
+    z-index: 2;
+    mix-blend-mode: normal;
+}
+
+.title {
+    z-index: 1;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+}
+
+.sub-title,
+.price {
+    z-index: 1;
+}
+
+.price {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.backgroundColor {
+    position: absolute;
+    width: 13rem;
+    aspect-ratio: 1 / 2;
+    background-color: #fafafa;
+    border-radius: 15% 15% 10px 10px;
+    z-index: 1;
+    bottom: 50px;
+}
+
+.card:hover {
+    text-align: center;
+    transform: scale(1.01); /* Slight scale effect on hover */
+}
+
+.card img {
+    transition: transform 0.5s; /* Smooth transition */
+    max-height: 15rem;
+    max-width: 15rem;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
