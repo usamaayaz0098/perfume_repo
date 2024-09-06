@@ -60,12 +60,19 @@ window.onload = () => {
             console.log("index", index)
             productList.innerHTML += `
             <div style="width: 20rem !important;height: 31rem;!important" class="card d-flex flex-column align-items-center justify-content-center">
+                <span class="offer" >upto 50% off</span>
+                <span class="new-arrival" >NEW</span>
                 <span style="position: absolute;width: 20rem;height: 24.5rem;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-left-radius: 0;border-bottom-right-radius: 0;z-index: 1;top: 0;left: 0;right: 0;bottom: 0;opacity: 0.25;border-radius: 5px 5px;" class="backgroundColor"></span>
                 <img style="object-fit: contain;max-height: 19rem;max-width: 19rem;aspect-ratio: 1 / 1;position: absolute;top: 2.5rem;z-index: 2;mix-blend-mode: normal;"src="${product.image}" alt="${product.title}" class="img-fluid" style="max-width: 150px;">
                 <div style="    gap: 1.5rem;padding-bottom: .5rem;position: absolute;bottom: 0;display: flex;flex-direction: column;align-items: center;background-color: black;color: gray;width:100%">
                 <span style="font-size:x-large; z-index: 1;font-weight: bold;letter-spacing: 0.5rem;"class="title">${product.title}</span>
                 <span style="font-style: italic;z-index-1"class="sub-title">Size: ${product.subTitle}</span>
                 <span style="z-index: 1;font-weight: bold;text-transform: uppercase;" class="price">${product.price}</span>
+                </div>
+                <div class="card-options">
+                    <img src="/assets/share_24dp_5F6368_FILL1_wght300_GRAD0_opsz48.svg" />
+                    <img src="/assets/favorite_24dp_5F6368_FILL1_wght300_GRAD0_opsz24.svg" />
+                    <img src="/assets/shopping_cart_24dp_5F6368_FILL1_wght300_GRAD0_opsz24.svg" />
                 </div>
             </div>
         `;

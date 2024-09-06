@@ -12,7 +12,8 @@ body {
     font-family: cursive;
     font-size: large;
     color: darkgrey;
-    letter-spacing: 0.3rem; /* Adjusted for clarity */
+    letter-spacing: 0.3rem;
+    /* Adjusted for clarity */
     width: max-content;
     text-transform: uppercase;
 }
@@ -23,7 +24,8 @@ body {
     }
 
     100% {
-        background-position: 100% 0; /* Use % for responsiveness */
+        background-position: 100% 0;
+        /* Use % for responsiveness */
     }
 }
 
@@ -59,7 +61,8 @@ body {
     animation: placeHolderShimmer 7s linear infinite;
     background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
     height: 100%;
-    width: 100%; /* Fixed to 100% for full width */
+    width: 100%;
+    /* Fixed to 100% for full width */
     position: absolute;
     padding-top: 50px;
     left: 0;
@@ -96,8 +99,9 @@ body {
 .qoute-container {
     background-color: currentcolor;
 }
+
 @media only screen and (max-width: 960px) {
-  
+
 
     .product-container {
         justify-content: center !important;
@@ -107,15 +111,18 @@ body {
 }
 
 .product-container {
-    gap: 1rem; /* Updated to 1rem for consistent gap */
+    gap: 1rem;
+    /* Updated to 1rem for consistent gap */
     margin-bottom: 5rem;
     width: 100%;
     position: relative;
     padding: 0;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Added for wrapping */
-    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap;
+    /* Added for wrapping */
+    justify-content: center;
+    /* Center items horizontally */
     max-width: 100%;
     padding: 0px;
     gap: 5px;
@@ -163,13 +170,86 @@ body {
     bottom: 50px;
 }
 
+
+.offer {
+    /* background-color: firebrick; */
+    background-color: yellowgreen;
+    z-index: 2;
+    position: absolute;
+    top: 5px;
+    width: -webkit-fill-available;
+    height: 2rem;
+    left: 5px;
+    right: 5px;
+    border-radius: 5px 5px;
+    font-weight: bold;
+    padding: 3px;
+}
+
+
+.card-options {
+    /* z-index: 2;
+    position: absolute;
+    width: 100%;
+    background: darkred;
+    padding: 1rem;
+    bottom: 0;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; */
+
+    img {
+        filter: invert(1)
+    }
+
+}
+
+.new-arrival {
+    z-index: 3;
+    position: absolute;
+    width: 5rem;
+    /* background: darkred; */
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+    top: 2.75rem;
+    right: 5px;
+    height: 2.25rem;
+    padding: 6px;
+    left: 7px;
+
+
+}
+
+
+
 .card:hover {
     text-align: center;
-    transform: scale(1.01); /* Slight scale effect on hover */
+    transform: scale(1.01);
+    transition-delay: 5ms;
+
+    /* Slight scale effect on hover */
+    .card-options {
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        background: darkred;
+        padding: 1rem;
+        bottom: 0;
+        gap: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        opacity: 0.9;
+        background-color: #000000c7;
+        height: 100%;
+    }
 }
 
 .card img {
-    transition: transform 0.5s; /* Smooth transition */
+    transition: transform 0.5s;
+    /* Smooth transition */
     max-height: 15rem;
     max-width: 15rem;
 }
